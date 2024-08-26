@@ -1,4 +1,4 @@
-const wordList = ["apple", "grape", "pearl", "stone", "plane"];
+const wordList = ["grape"];
 const answer = wordList[Math.floor(Math.random() * wordList.length)];
 
 let currentGuess = "";
