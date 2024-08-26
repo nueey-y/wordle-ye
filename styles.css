@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+#game-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 10px;
+    margin: 20px 0;
+}
+
+.tile {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #d3d3d3;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 60px;
+    background-color: #fff;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+#keyboard {
+    margin-top: 20px;
+    width: 100%; /* 키보드를 가운데 정렬하기 위해 폭 설정 */
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.key {
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.key.correct {
+    background-color: #6aaa64; /* 초록색 */
+    color: white;
+}
+
+.key.present {
+    background-color: #c9b458; /* 노란색 */
+    color: white;
+}
+
+.key.absent {
+    background-color: #787c7e; /* 회색 */
+    color: white;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #d32f2f;
+}
